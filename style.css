@@ -40,7 +40,7 @@ nav li{
     font-size: 14px;
 }
 .container{
-    padding: 0 7%;
+    padding: 2px 7%;
 }
 .container h1{
     font-size: 4vw;
@@ -260,18 +260,18 @@ nav li{
        top: 4%;
        left: 7%;
    }
-   nav{
+   nav {
        position: fixed;
        top: 0;
-       z-index: 100;
+       z-index: 999;
        display: inline-block;
        width: 100%;
-       padding: 90px 7% 30px;
+       padding: 44px 7% 30px;
        background: #ccc;
        text-align: center;
        overflow:hidden;
        transition:  max-height .7s;
-        max-height: 0px;
+       max-height: 0px;
         opacity: .999;
     }
    nav li{
@@ -291,8 +291,7 @@ nav li{
         background-color: white;
         font-size: 25px;
         cursor: pointer;
-        z-index: 1000;
-        cursor: zoom-in;
+        z-index: 1000  !important ;
     }
     .show-menu{
         max-height: 300px;
